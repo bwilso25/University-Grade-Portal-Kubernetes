@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: grade-submission-portal
 spec:
+  type: NodePort
   selector:
     app.kubernetes.io/instance: grade-submission-portal
   ports:
